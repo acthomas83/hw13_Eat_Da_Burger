@@ -5,7 +5,7 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-CREATE TABLE burgers-- CREATE TABLE chirps (
+CREATE TABLE burgers(
 
   -- TABLE CODE TO GO HERE
   id integer not null auto_increment,
