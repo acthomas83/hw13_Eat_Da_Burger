@@ -3,9 +3,9 @@
 <h2>Burgers to be Eaten</h2>
 
 <ul>
-  {{#each Burgers}}
-    {{#unless sleepy}}
-      {{> burgers/burger-block sleep=true}}
+  {{#each burgers}}
+    {{#unless eaten}}
+      {{> burgers/burger-block eaten=true}}
     {{/unless}}
   {{/each}}
 </ul>
