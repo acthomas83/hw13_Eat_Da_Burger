@@ -11,48 +11,10 @@ app.get('/', function (req, res) {
   res.send('Hello World!'); // This will serve your request to '/'.
 });
 
-app.listen(8001, function () {
-  console.log('Example app listening on port 8001!');
- });
-
-
-
-//  'use strict';
-
-//  setInterval(function () {}, Number.MAX_VALUE); // keep process alive
- 
-//  var myEmitter = new (require('events').EventEmitter)();
- 
-//  // add this handler before emitting any events
-//  process.on('uncaughtException', function (err) {
-//      console.log('UNCAUGHT EXCEPTION - keeping process alive:', err); // err.message is "foobar"
-//  });
- 
-//  myEmitter.emit('error', new Error('foobar'));'use strict';
-
-//  setInterval(function () {}, Number.MAX_VALUE); // keep process alive
- 
-//  var myEmitter = new (require('events').EventEmitter)();
- 
-//  // add this handler before emitting any events
-//  process.on('uncaughtException', function (err) {
-//      console.log('UNCAUGHT EXCEPTION - keeping process alive:', err); // err.message is "foobar"
-//  });
- 
-//  myEmitter.emit('error', new Error('foobar'));'use strict';
-
-//  setInterval(function () {}, Number.MAX_VALUE); // keep process alive
- 
-//  var myEmitter = new (require('events').EventEmitter)();
- 
-//  // add this handler before emitting any events
-//  process.on('uncaughtException', function (err) {
-//      console.log('UNCAUGHT EXCEPTION - keeping process alive:', err); // err.message is "foobar"
-//  });
- 
-//  myEmitter.emit('error', new Error('foobar'));漀
-
-
+//1. set up API routes - just like the way routes are defined in controllers/catsController.js of the Cats app and used in server.js of the Cats app
+//2. set up a handlebars 'views' folder and set up handlebars in this file the same way that it is set up in server.js of the Cats app
+     //- this has already been started on lines 27-30
+//
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
@@ -69,7 +31,6 @@ app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
 let routes = require("./controllers/burgersController.js");
-
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.

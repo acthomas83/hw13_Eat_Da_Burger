@@ -3,9 +3,9 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 8889,
+  port: 3306,
   user: "root",
-  password: "root",
+  password: "acT026813",
   database: "burgers_db"
 });
 
@@ -20,3 +20,4 @@ connection.connect(function(err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
+
